@@ -40,6 +40,7 @@ WHERE STR_TO_DATE(end, "%Y-%m-%d %H:%i") < NOW();
 Run the following commands inside the project:
 
 On a Windows machine, run 'setup' file (only the first time) and then the `run` file.
+
 On a Linux machine, run this command in the first terminal:
 ```bash
 java -jar ./server/demo-0.0.1-SNAPSHOT.jar
