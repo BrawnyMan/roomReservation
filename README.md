@@ -12,7 +12,7 @@ This project was generated with:
 Clone the repository (or download as a ZIP):
 
 ```bash
-git clone [repository_url]
+git clone https://github.com/BrawnyMan/roomReservation.git
 ```
 
 The necessary dependencies. Refer to the installation pages for each technology:
