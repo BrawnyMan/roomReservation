@@ -42,7 +42,7 @@ Run the following commands inside the project:
 On a Windows machine, run 'setup' file (only the first time) and then the `run` file.
 On a Linux machine, run this command in the first terminal:
 ```bash
-java -jar ./server/demo/target/demo-0.0.1-SNAPSHOT.jar
+java -jar ./server/demo-0.0.1-SNAPSHOT.jar
 ```
 and in the second terminal:
 ```bash
