@@ -1,0 +1,11 @@
+<h1>{{ title }}</h1>
+<table>
+  <tr *ngFor="let room of rooms">
+    <td [ngClass]="'name-col'">{{ room.title }}</td>
+    <td [ngClass]="'button-col'">
+      <button [routerLink]="['/room-details', room.id]">
+        Izberi
+      </button>
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,18 @@
+<h1>{{ title }}</h1>
+
+<button [routerLink]="['/room-details', id]">Nazaj</button>
+
+<form [formGroup]="form" (submit)="SubmitAdd()">
+  <input type="hidden" formControlName="id" [value]="id">
+  <br>
+  <label for="name">Ime Termina:</label>
+  <input id="name" type="text" formControlName="name">
+  <br>
+  <label for="start">Začetek Termina:</label>
+  <input id="start" type="datetime-local" step="300" formControlName="start">
+  <br>
+  <label for="end">Konec Termina:</label>
+  <input id="end" type="datetime-local" step="300" formControlName="end">
+  <br>
+  <button type="submit">Dodaj</button>
+</form>

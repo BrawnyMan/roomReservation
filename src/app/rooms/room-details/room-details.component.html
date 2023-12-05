@@ -1,0 +1,21 @@
+<h1>{{ title }}</h1>
+
+<button [ngClass]="'btn'" [routerLink]="['/']">Nazaj</button>
+<button [ngClass]="'btn add-btn'" [routerLink]="['/room-adding', id]">Dodaj termin</button>
+
+<table>
+  <tr>
+    <th>Ime</th>
+    <th>Začetek</th>
+    <th>Konec</th>
+    <th>Izbris</th>
+  </tr>
+  <tr *ngFor="let data of roomData">
+    <td>{{ data.name }}</td>
+    <td>{{ data.start }}</td>
+    <td>{{ data.end }}</td>
+    <td><button [ngClass]="'delete-btn'" (click)="deleteRoomRes(data.id, data.name)">
+        Izbriši
+      </button></td>
+  </tr>
+</table>
