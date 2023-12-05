@@ -22,7 +22,7 @@ The necessary dependencies. Refer to the installation pages for each technology:
 - [Java](https://www.oracle.com/au/java/technologies/downloads/#jdk21-windows),
 - [MariaDB](https://mariadb.org/download).
 
-Before running the project, you have to insert sql scipt into the database. The "data.sql" script is located in ./RoomReservation-app/server. 
+Before running the project, you have to insert sql scipt into the database. The "data.sql" script is located in "server" folder.
 You can do it from the command line (`mysql -u [user] -p < data.sql`) or use [MySQL Workbench](https://dev.mysql.com/downloads/workbench/).
 
 In the SQL script, there is a timer that deletes old reservations. That command is run every 5 minutes, but you can change it with the same command from the "data.sql" file.
