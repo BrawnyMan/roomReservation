@@ -37,6 +37,8 @@ DELETE FROM reservation
 WHERE STR_TO_DATE(end, "%Y-%m-%d %H:%i") < NOW();
 ```
 
+The source code of server (not the .jar file) is located in `./server/demo` folder.
+
 Run the following commands inside the project:
 
 On a Windows machine, run 'setup' file (only the first time) and then the `run` file.
