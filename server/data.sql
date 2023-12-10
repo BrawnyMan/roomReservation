@@ -20,7 +20,7 @@ CREATE TABLE reservation (
 
 INSERT INTO rooms (name) VALUES ("Room 1") , ("Room 2"), ("Room 3"), ("Room 4"), ("Room 5");
 
-INSERT INTO reservation (room_id, name, start, end) VALUES
+INSERT INTO reservation (room_id, title, start, end) VALUES
 (1, "Programing 1", "2023-12-02 12:00", "2023-12-02 15:00"),
 (2, "Programing 2", "2023-12-02 15:00", "2023-12-02 16:00"),
 (2, "TUP", "2024-12-02 17:00", "2024-12-02 18:00"),
