@@ -1,0 +1,14 @@
+<h1>{{ getHeadTitle() }}</h1>
+
+<table>
+  @for (room of getRooms(); track $index) {
+  <tr>
+    <td [ngClass]="'name-col'">{{ room.name }}</td>
+    <td [ngClass]="'button-col'">
+      <button [routerLink]="['/room-details', room.id]">
+        Izberi
+      </button>
+    </td>
+  </tr>
+  }
+</table>
