@@ -90,7 +90,6 @@ export class RoomAddingComponent implements OnInit {
     if (res.title !== "") {
       this.apiService.createReservation(res).subscribe(
         (res) => {
-          alert(res.response);
           switch (res.response) {
             case ResponseType.OK:
               this.router.navigate(["/room-details", this.id]);
