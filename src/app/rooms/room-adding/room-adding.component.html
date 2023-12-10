@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>{{ getHeadTitle() }}</h1>
 
 <button [routerLink]="['/room-details', getId()]">Nazaj</button>
@@ -7,6 +8,17 @@
   <br>
   <label for="title">Naslov Termina:</label>
   <input id="title" type="text" formControlName="title">
+=======
+<h1>{{ title }}</h1>
+
+<button [routerLink]="['/room-details', id]">Nazaj</button>
+
+<form [formGroup]="form" (submit)="SubmitAdd()">
+  <input type="hidden" formControlName="id" [value]="id">
+  <br>
+  <label for="name">Ime Termina:</label>
+  <input id="name" type="text" formControlName="name">
+>>>>>>> b1f85429dd387ed4cd2ad1752807b698ffce9729
   <br>
   <label for="start">Začetek Termina:</label>
   <input id="start" type="datetime-local" step="300" formControlName="start">

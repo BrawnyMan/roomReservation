@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 <h1>{{ getHeadTitle() }}</h1>
 
 <button [ngClass]="'btn'" [routerLink]="['/']">Nazaj</button>
 <button [ngClass]="'btn add-btn'" [routerLink]="['/room-adding', getId()]">Dodaj termin</button>
+=======
+<h1>{{ title }}</h1>
+
+<button [ngClass]="'btn'" [routerLink]="['/']">Nazaj</button>
+<button [ngClass]="'btn add-btn'" [routerLink]="['/room-adding', id]">Dodaj termin</button>
+>>>>>>> b1f85429dd387ed4cd2ad1752807b698ffce9729
 
 <table>
   <tr>
@@ -10,6 +17,7 @@
     <th>Konec</th>
     <th>Izbris</th>
   </tr>
+<<<<<<< HEAD
   @for (reservation of getReservations(); track $index) {
   <tr>
     <td>{{ reservation.title }}</td>
@@ -20,4 +28,14 @@
       </button></td>
   </tr>
   }
+=======
+  <tr *ngFor="let data of roomData">
+    <td>{{ data.name }}</td>
+    <td>{{ data.start }}</td>
+    <td>{{ data.end }}</td>
+    <td><button [ngClass]="'delete-btn'" (click)="deleteRoomRes(data.id, data.name)">
+        Izbriši
+      </button></td>
+  </tr>
+>>>>>>> b1f85429dd387ed4cd2ad1752807b698ffce9729
 </table>

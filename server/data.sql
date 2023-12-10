@@ -4,21 +4,35 @@ USE reservations;
 
 CREATE TABLE rooms (
     id BIGINT NOT NULL AUTO_INCREMENT,
+<<<<<<< HEAD
     name VARCHAR(255) UNIQUE NOT NULL,
+=======
+    title VARCHAR(255) UNIQUE NOT NULL,
+>>>>>>> b1f85429dd387ed4cd2ad1752807b698ffce9729
     PRIMARY KEY (id) 
 );
 
 CREATE TABLE reservation (
+<<<<<<< HEAD
     id BIGINT NOT NULL AUTO_INCREMENT,
     room_id BIGINT,
     title VARCHAR(51),
+=======
+	id BIGINT NOT NULL AUTO_INCREMENT,
+    room_id BIGINT,
+    name VARCHAR(51),
+>>>>>>> b1f85429dd387ed4cd2ad1752807b698ffce9729
     start VARCHAR(16),
     end VARCHAR(16),
     FOREIGN KEY (room_id) REFERENCES rooms(id),
     PRIMARY KEY (id)
 );
 
+<<<<<<< HEAD
 INSERT INTO rooms (name) VALUES ("Room 1") , ("Room 2"), ("Room 3"), ("Room 4"), ("Room 5");
+=======
+INSERT INTO rooms (title) VALUES ("Room 1") , ("Room2"), ("Room3"), ("Room4"), ("Room5");
+>>>>>>> b1f85429dd387ed4cd2ad1752807b698ffce9729
 
 INSERT INTO reservation (room_id, name, start, end) VALUES
 (1, "Programing 1", "2023-12-02 12:00", "2023-12-02 15:00"),
